@@ -1,0 +1,827 @@
+ /*!--------FUENTE------- */
+
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/*!--------RESET------- */   
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;  
+    box-sizing: border-box;  
+}
+
+/*!--------HEADER------- }*/
+header{
+    position: sticky;
+    top: 0;  
+}
+.logo{
+    width:220px ;
+}
+.nav-color{
+    background-color: #164863;
+}
+.nav-link{
+    color: white;
+    font-size: 15px;
+}
+.navbar-nav .nav-link.active{
+    color: #9BBEC8;
+    font-size: 15px;
+}
+
+/*!--------MAIN------- */
+
+.titulo h1{
+    font-size:22px; 
+    background-color: #9bbec872;
+    color: white;
+    font-weight: lighter;
+}
+
+main section h2{
+    font-size: 25px;
+    color:#164863;
+    text-align: center;
+    font-weight:bolder;
+}
+
+main i {
+    font-size: 50px;
+    background-color: #25D365;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+}
+
+.hero{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/superior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+    height:calc(100vh - 71px);
+    color: white;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p{
+    font-size: 20px;  
+    margin-bottom: 20px;  
+    width: 50%;    
+    color: white;
+}
+
+.hero h1{
+    font-size: 35px; 
+    padding: 10px;      
+}
+
+.hero a{ 
+    text-decoration: none; 
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #9bbec8bc;
+    width: 130px;
+    text-align: center;
+}
+
+.hero a:hover{
+    background-color: #164863;
+}
+
+.hero div{
+    display: flex;
+}
+
+.elegirnos{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.elegirnos img{
+    width: 500px;
+}
+
+.elegirnos div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.elegirnos div p{
+    font-size: 18px;  
+    text-align: justify;  
+    color: #427D9D;
+    margin:10px;
+}   
+
+.elegirnos div h2{
+    font-size: x-large;
+    color:#164863;
+    margin-bottom: 10px;
+}
+
+.servicios {
+    padding: 30px 10px;
+    margin-top: 20px;
+}
+
+.servicios .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.servicios .contenedor div{
+    width: 300px;
+    height: 300px;
+    border: #164863 solid 2px;
+    border-radius: 10px;
+    margin: 30px;  
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;  
+    background-color: #164863;
+}
+
+.servicios .contenedor div:hover{
+    width: 350px;
+    height: 350px;
+}
+.servicios .contenedor div h3{
+    font-size:medium;
+    text-align: center; 
+    height: 10%;
+    color: white;
+}
+
+.servicios .contenedor div img{
+    width:40%;      
+}
+
+.servicios .contenedor div a{
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: 2px;
+    color: #164863;
+    background-color:  rgba(255, 255, 255, 0.839);
+    font-size: smaller;
+    width: 40%;
+}
+
+.contenedor div a:hover{
+    background-color: #427d9dcc;
+    color: white;
+}
+
+.galeria{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+}
+
+.galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-2{
+    grid-column: span 2;
+}
+.img-3{
+    grid-row: span 2;
+}
+.img-7{
+    grid-row: span 2;
+}
+.img-8{
+    grid-column: span 2;
+}
+
+/*!--------FOOTER------- */
+
+footer{
+    background-color: #164863;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+    flex-wrap: wrap;
+}
+
+footer img{
+    width:200px ;
+}
+
+footer div a img{
+    width:35px ;
+    height:35px ;
+    margin:5px    
+}
+
+/*!--------NOSOTROS------- */
+
+main h1{
+    font-size: 40px; 
+    padding: 10px;      
+}
+.nosotros {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    background-color:#ddf2fd32;
+    flex-wrap: wrap;
+}
+
+.nosotros img{
+    width: 600px;
+}
+
+.nosotros div{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    
+}
+.nosotros div p{
+    padding-top: 20px;
+    text-align: justify;  
+    color: #427D9D;
+    font-size: 18px;
+    
+}
+.como {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.como div{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+.como div p{
+    padding-top: 20px ;
+    text-align: justify;
+    color: #427D9D;    
+    font-size: 18px;
+}
+
+.como img{
+    width: 600px;  
+}
+
+.valor {
+    padding: 30px 10px 40px;
+    background-color:#ddf2fd32;
+}
+
+.valor h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.valor div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.valor div div{
+    width: 350px;
+    margin: 20px;  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor div div img{
+    width:50px ;
+    height:50px ; 
+}
+
+.valor div div h3{
+    padding: 5px;   
+    font-size: 20px;  
+}
+
+.valor div div p{
+    padding: 5px;
+    color:#164863;
+    font-size: 15px; 
+}
+
+/*!--------SERVICIOS------- */
+
+.servicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:5px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.servicio img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.servicio:hover{
+    box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.19);
+    font-weight: bolder;
+}
+
+.servicio .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    width: 60%;
+    background-color:#ddf2fd32;  
+    padding-left: 30px;  
+    padding-right: 30px;   
+    height: 100%;   
+    margin: 10px;  
+}
+
+
+.servicio .texto p{
+    margin: 5px;
+    font-size: 14px;
+    text-align: justify;
+    color:#164863;
+}
+
+.servicio .texto h3{
+    margin: 10px;
+    font-size: 14px;
+    color:#164863;
+}
+
+.servicio .texto ul li{
+    font-size: 14px;
+    color: #427D9D; 
+    padding-left: 10px;
+    list-style: none;
+}
+
+.servicio .texto h2{
+    font-size: x-large;
+    color:#164863;
+    font-weight:bolder;
+    text-align: left;
+}
+
+/*!--------OPERACIONES------- */
+
+.operaciones{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/op-logisticos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    margin-top: 5px;
+}
+
+.operaciones div{
+    font-size: 18px;    
+    color: white;
+    text-align: justify;
+    padding: 20px 25px;
+}
+
+.operaciones div h2{
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+}
+
+.operadores{
+    padding: 30px;
+}
+
+.operadores h2{
+    margin: 20px;
+}
+
+.operadores p{
+    width: 80%;
+    margin: auto;
+}
+
+.plContenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.pl{
+    width: 80%;
+    text-align: justify;
+    border: #164863 solid 2px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pl:hover{
+    border: #9BBEC8 solid 5px;
+}
+
+.pl h3{
+    height: 100%;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+    background-color: #164863;    
+}
+
+
+.pl div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pl div p{
+    padding: 10px 20px;
+}
+.pl div img{
+    height: 120px;
+}
+
+/*!--------CONTACTO------- */
+
+.datos-contacto h2{
+    margin: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.contactanos {
+    display: flex;
+    justify-content: space-between;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/op-logisticos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0px;
+}
+
+.contactanos-formulario{
+    margin: 20px ;
+}
+
+.contactanos-formulario p{
+    font-size: 18px;
+    color: white;
+    width: 80%;
+    
+}
+
+.formulario{
+    border: #164863 solid 1px;
+    margin: 0px 20px;
+    padding: 30px;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    color: #164863;
+    background-color: white;
+}
+
+.btn-primary{
+    background-color: #164863;
+    --bs-btn-border-color: #164863;
+    --bs-btn-hover-bg: #9BBEC8;
+    --bs-btn-hover-border-color: #9BBEC8;
+}
+
+.contacto{
+    margin: 0px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .datos-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.datos-contacto p{  
+    color: #DDF2FD;
+    font-size: 18px;
+}
+.datos-contacto h3{  
+    font-size: 20px;
+}
+
+.mapa-ubicacion{
+    margin: 10px auto;
+}
+
+
+
+/*!--------MEDIA QUERY------- */
+
+@media screen and (max-width:1250px){
+    .elegirnos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .elegirnos div{
+        width: 80%;
+        text-align: center;
+    }
+    .elegirnos img{
+        width: 50%;
+    } 
+    .nosotros{
+        flex-direction: column;
+    }
+    .nosotros div{
+        width: 80%;
+    }
+    .como {
+        flex-direction: column-reverse;
+    }
+    .como div{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width:900px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 20px;
+    }
+    .galeria div{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    header{
+        flex-direction: column;
+    }
+    .hero p{
+        font-size: 18px;  
+    }
+    .hero h1{
+        font-size: 25px;     
+    }
+    .hero a{ 
+        font-size: 12px;
+    }
+    main i {
+        font-size: 40px;
+    }
+    .nosotros img{
+        width: 500px;
+    }
+    .nosotros div p{
+        font-size: 15px;
+    }
+    .nosotros div h2{
+        font-size: 18px;
+    }
+    .como img{
+        width: 500px;
+    }
+    .como div p{
+        font-size: 15px;
+    }
+    .como div h2{
+        font-size: 18px;
+    }
+    .valor h2{
+        font-size: 18px; 
+    }
+    .valor div div{
+        width: 250px;
+        margin: 10px;  
+    }
+    
+    .valor div div img{
+        width:30px ;
+        height:30px ; 
+    }
+    
+    .valor div div h3{
+        font-size: 15px;     
+    }
+    
+    .valor div div p{
+        font-size: 12px; 
+    }
+    .titulo h1{
+        font-size:20px; 
+    }
+}
+
+@media screen and (max-width:800px){
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .elegirnos div p{
+        font-size: 15px;  
+    }   
+    .elegirnos div h2{
+        font-size: 20px;
+    }  
+
+    .como img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:650px){
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+    .hero p{
+        font-size: 15px;  
+        margin-bottom: 10px;  
+    }
+    .hero h1{
+        font-size: 20px;     
+    }
+    .hero a{ 
+        font-size: 12px;
+        width: 90px;
+        padding: 5px;
+    }
+    .img-4{
+        display: none;
+    }
+    .nosotros img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .elegirnos div p{
+        font-size: 12px;  
+    }   
+    .elegirnos div h2{
+        font-size: 15px;
+    }  
+    .hero p{
+        font-size: 15px;  
+        margin-bottom: 10px;  
+    }
+    .hero h1{
+        font-size: 18px;     
+    }
+    .hero a{ 
+        font-size: 10px;
+        width: 90px;
+        padding: 5px;
+    }  
+    main i {
+        font-size: 30px;
+        right: 20px;
+        bottom: 40px;
+    }
+    .servicios .contenedor div{
+        width: 200px;
+        height: 200px;
+        margin: 20px;    
+    }
+
+    .servicios .contenedor div:hover{
+        width: 200px;
+        height: 200px;
+    }
+    .servicios .contenedor div h3{
+        font-size:12px;
+    }
+    .servicios .contenedor div a{
+        font-size: 10px;
+        width: 40%;
+    }
+    main section h2{
+        font-size: 18px;
+    }
+    header img{
+        width:150px ;       
+    }
+    header nav ul li a{
+        font-size: 12px;  
+    }
+    footer img{
+        width:150px ;
+    }
+    
+    footer div a img{
+        width:20px ;
+        height:20px ;
+        margin:5px    
+    }
+    .nosotros img{
+        width: 250px;
+    }
+    .nosotros div p{
+        font-size: 12px;
+    }
+    .nosotros div h2{
+        font-size: 15px;
+    }
+    .como div p{
+        font-size: 12px;
+    }
+    .como div h2{
+        font-size: 15px;
+    }
+
+    .valor h2{
+        font-size: 18px; 
+    }
+    .valor div div{
+        width: 200px;
+        margin: 5px;  
+    }
+    
+    .valor div div img{
+        width:20px ;
+        height:20px ; 
+    }
+    
+    .valor div div h3{
+        font-size: 12px;     
+    }
+    
+    .valor div div p{
+        font-size: 10px; 
+    }
+    .titulo h1{
+        font-size:15px; 
+    }
+
+    .nosotros {
+        padding: 0px 0px;
+    }
+    .nosotros div{
+        padding: 10px;
+    }
+    .nosotros div p{
+        padding-top: 10px;
+    }
+    .como {
+        padding: 0px 0px;
+    }
+    .como div{
+        padding: 10px;
+    }
+    .como div p{
+        padding-top: 10px;
+    }
+}
