@@ -21,13 +21,13 @@ header{
 .nav-color{
     background-color: #164863;
 }
+
 .nav-link{
     color: white;
     font-size: 15px;
 }
 .navbar-nav .nav-link.active{
     color: #9BBEC8;
-    font-size: 15px;
 }
 
 /*!--------MAIN------- */
@@ -105,7 +105,8 @@ main i {
 
 .elegirnos{
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-around; 
+    margin-top: 10px;  
 }
 
 .elegirnos img{
@@ -606,9 +607,7 @@ main h1{
         grid-column: span 1;
         grid-row: span 1;
     }
-    header{
-        flex-direction: column;
-    }
+    
     .hero p{
         font-size: 18px;  
     }
@@ -665,11 +664,7 @@ main h1{
 }
 
 @media screen and (max-width:800px){
-    header nav ul{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    
     .elegirnos div p{
         font-size: 15px;  
     }   
@@ -684,6 +679,9 @@ main h1{
 }
 
 @media screen and (max-width:650px){
+    .logo {
+        width: 150px;
+    }
     .galeria{
         grid-template-columns: 1fr;
     }
@@ -708,6 +706,7 @@ main h1{
 }
 
 @media screen and (max-width:550px){
+    
     .elegirnos div p{
         font-size: 12px;  
     }   
@@ -751,12 +750,7 @@ main h1{
     main section h2{
         font-size: 18px;
     }
-    header img{
-        width:150px ;       
-    }
-    header nav ul li a{
-        font-size: 12px;  
-    }
+    
     footer img{
         width:150px ;
     }
