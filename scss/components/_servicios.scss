@@ -1,0 +1,54 @@
+.servicio{
+    @include flexbox(row,space-around,center,nowrap);
+    padding:5px;
+    width: 80%;
+    margin: 20px auto;
+    transition: 1s;
+    &:hover{
+        font-weight: bolder; 
+        transform: scale(1.05);
+        border: nth($colores,3) solid 2px;
+    }
+    .texto{
+        @include flexbox(column,space-around,flex-start,nowrap);
+        width: 60%;
+        background-color:#ddf2fd32;  
+        padding-left: 30px;  
+        padding-right: 30px;   
+        height: 100%;   
+        margin: 10px;  
+        h2{
+            font-size: x-large;
+            color:nth($colores,1);
+            font-weight:bolder;
+            text-align: left;
+
+        }
+        p{
+            margin: 5px;
+            font-size: 14px;
+            text-align: justify;
+            color:nth($colores,1);
+        }
+        h3{
+            margin: 10px;
+            font-size: 14px;
+            color:nth($colores,1);
+        }
+        ul{
+            li{
+                font-size: 14px;
+                color: nth($colores,2);
+                padding-left: 10px;
+                list-style: none;
+
+            }
+        }
+    }
+    img{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+
+    }
+}

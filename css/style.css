@@ -236,7 +236,7 @@ footer img{
 footer div a img{
     width:35px ;
     height:35px ;
-    margin:5px    
+    margin:5px;    
 }
 
 /*!--------NOSOTROS------- */
@@ -249,7 +249,7 @@ main h1{
     padding: 20px 10px;
     display: flex;
     align-items: center;
-    background-color:#ddf2fd32;
+    background-color:#ddf2fd2d;
     flex-wrap: wrap;
 }
 
@@ -567,7 +567,6 @@ main h1{
 }
 
 
-
 /*!--------MEDIA QUERY------- */
 
 @media screen and (max-width:1250px){
@@ -661,6 +660,11 @@ main h1{
     .titulo h1{
         font-size:20px; 
     }
+
+    .servicio{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:800px){
@@ -706,6 +710,10 @@ main h1{
 }
 
 @media screen and (max-width:550px){
+    .galeria{
+        grid-auto-rows: 200px;
+        gap: 10px;
+    }
     
     .elegirnos div p{
         font-size: 12px;  

@@ -1,0 +1,33 @@
+.contactanos{
+    @include flexbox(row,space-between,flex-start,nowrap);
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/op-logisticos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0px;
+    
+    .contacto{
+        margin: 0px 20px 20px 40px;
+        @include flexbox(column,center,center,nowrap);
+        width: 50%;
+        .datos-contacto{
+            @include flexbox(column,space-evenly,center,nowrap);
+            color: nth($colores,5);
+            h2{
+                margin: 30px;
+                font-size: 18px;
+                font-weight: bolder;
+            }
+            h3{
+                font-size: 20px;
+
+            }
+            p{
+                color: nth($colores,4);
+                font-size: 18px;
+            }
+        }
+        
+    }
+} 
+

@@ -1,0 +1,76 @@
+.nosotros{
+    padding: 20px 10px;
+    @include flexbox(row,center,center,wrap);
+    background-color:#ddf2fd2d;
+    div{
+        padding: 40px;
+        @include flexbox(column,space-evenly,center,nowrap);
+        width: 50%;
+        h2{
+
+        }
+        p{
+            padding-top: 20px;
+            text-align: justify;  
+            color: nth($colores,2) ;
+            font-size: 18px;
+        }
+    }
+    img{
+        width: 600px;
+
+    }
+}
+
+.como{
+    padding: 20px 10px;
+    @include flexbox(row,center,center,wrap);
+    img{
+        width: 600px; 
+    }
+    div{
+        padding: 40px;
+        @include flexbox(column,space-evenly,center,nowrap);
+        width: 50%;
+        h2{
+
+        }
+        p{
+            padding-top: 20px ;
+            text-align: justify;
+            color: nth($colores,2);    
+            font-size: 18px;
+        }
+    }
+}
+.valor{
+    padding: 30px 10px 40px;
+    background-color:#ddf2fd32;
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    div{
+        @include flexbox(row,space-around,center,wrap);
+        div{
+            width: 350px;
+            margin: 20px;  
+            text-align: center;
+            @include flexbox(column,center,center,nowrap);
+            img{
+                width:50px ;
+                height:50px ;
+            }
+            h3{
+                padding: 5px;   
+                font-size: 20px;
+            }
+            p{
+                padding: 5px;
+                color:nth($colores,1);
+                font-size: 15px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,580 @@
+@media screen and (max-width:1250px){
+    .elegirnos{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 50%;
+        }       
+        div{
+            width: 80%;
+            text-align: center;
+        }
+    }
+    
+    .nosotros{
+        flex-direction: column;
+        div{
+            width: 80%;
+        }
+        
+    }
+    
+    .como {
+        flex-direction: column-reverse;
+        div{
+            width: 80%;
+        }
+    }
+    
+    .operaciones{
+        height: fit-content;
+    }
+    .operadores{
+        .plContenedor{
+            .pl{
+                width: 90%;
+                margin: 10px;
+                height: fit-content;
+                justify-content: center;
+                div{ 
+                    width: fit-content;
+                    img{
+                        height: 90px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .contactanos{
+        .contacto{
+            margin: 0px 20px 20px 20px;   
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 20px;
+        div{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+    
+    .hero{
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: $font-h2;
+        }
+        div{
+            a{
+                font-size: 12px;
+            }          
+        }
+    }
+    
+    main i {
+        font-size: 40px;
+    }
+    .nosotros{
+        div{
+            h2{
+                font-size: $font-h2;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        img{
+            width: 500px;
+        }
+    } 
+   
+    
+    .como{
+        img{
+            width: 500px;
+        }
+        div{
+            h2{
+                font-size: $font-h2;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    } 
+   
+    .valor{
+        h2{
+            font-size: $font-h2;
+        }
+        div{
+            div{
+                width: 250px;
+                margin: 10px;
+                img{
+                    width:30px;
+                    height:30px; 
+                }
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 12px; 
+                }
+            }
+        }
+    } 
+  
+    .titulo{
+        h1{
+            font-size:20px; 
+        }
+    } 
+
+    .servicio{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .texto{
+            width: 90%;
+            align-items:center;
+            ul{
+                li{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #distribucion{
+        flex-direction: column-reverse;
+    }
+    #kpi{
+        flex-direction: column-reverse;
+    }
+    #comex{
+        flex-direction: column-reverse;
+    }
+
+    .operaciones{
+        div{
+            font-size: 15px; 
+            h2{
+                font-size: 20px;
+            }
+        } 
+    }
+        
+    .operadores{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px; 
+        }
+        .plContenedor{
+            .pl{
+                h3{
+                    font-size: 25px;
+                }
+                div{ 
+                    img{
+                        height: 80px;
+                    }   
+                }
+            }
+        }
+    }
+
+    .contactanos{
+        @include flexbox(column,center,center,nowrap);
+        .contacto{
+            @include flexbox(row,space-around,center,nowrap);
+            margin: 20px;
+            width: 100%;
+            .datos-contacto{
+                
+                h2{
+                    margin: 20px;
+                }
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .contactanos-formulario{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .elegirnos{     
+        div{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+            
+        }
+    }    
+    .como{
+        img{
+            display: none;
+        }
+    } 
+    .operaciones{
+        @include flexbox(column,center,center,nowrap);
+    }
+    .operadores{
+        p{
+            width: 90%;
+        }
+        .plContenedor{
+            .pl{
+                h3{
+                    font-size: 22px;
+                }
+                div{ 
+                    img{
+                        height: 60px;
+                    }   
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .logo {
+        width: 150px;
+    }
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+    .hero{
+        h1{
+            font-size: 20px; 
+        }
+        p{
+            font-size: 15px;  
+            margin-bottom: 10px;
+        }
+        div{
+            a{
+                font-size: 12px;
+                width: 90px;
+                padding: 5px;
+            }
+        }
+    }
+    
+    .img-4{
+        display: none;
+    }
+    .nosotros{
+        img{
+            width: 400px;
+        }
+    } 
+    .servicio{
+        .texto{
+            h2{
+                font-size: 16px;
+            }
+            p{
+                font-size: 12px;
+            }
+            h3{
+                font-size: 12px;
+                text-align: center;
+            }
+            ul{
+                li{
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+    } 
+    .operadores{
+        padding: 20px;
+        p{
+            width: 90%;
+        }
+        .plContenedor{
+            margin: 10px;
+            .pl{
+                @include flexbox(column,center,center,nowrap);
+                padding: 10px;
+                h3{
+                    padding: 10px;
+                    margin: 5px;
+                }  
+                div{
+                    p{
+                        width: 100%;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .contactanos{
+        .contacto{
+            @include flexbox(row,space-around,center,nowrap);
+            margin: 20px;
+            width: 100%;
+            .datos-contacto{
+                
+                h2{
+                    margin: 18px;
+                }
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .contactanos-formulario{
+        margin: 10px ;
+        p{
+            font-size: 15px;
+        }   
+    }
+}
+
+@media screen and (max-width:550px){
+    .galeria{
+        grid-auto-rows: 200px;
+        gap: 10px;
+    }
+    .elegirnos{     
+        div{
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+            }            
+        }
+    }
+    
+    .hero{
+        h1{
+            font-size: $font-h2; 
+        }
+        p{
+         
+        }
+        div{
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+   
+    main{
+        i {
+            font-size: 30px;
+            right: 20px;
+            bottom: 40px;
+        }
+    }
+    .servicios{
+        .contenedor{
+            div{
+                width: 200px;
+                height: 200px;
+                margin: 20px;  
+                &:hover{
+                    width: 200px;
+                    height: 200px;
+                }
+                h3{
+                    font-size:12px;
+                }  
+                a{
+                    font-size: 10px;
+                    width: 40%;
+                }
+            }
+        }    
+    }
+
+    main{
+        section{
+            h2{
+                font-size: $font-h2;
+            }
+        }
+    } 
+    
+    footer{
+        img{
+            width:150px ;
+        }
+        div{
+            a{
+                img{
+                    width:20px ;
+                    height:20px ;
+                    margin:5px; 
+                }
+            }
+        }
+    } 
+    
+   
+    .nosotros{
+        padding: 0px 0px;
+        div{
+            padding: 10px;
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+                padding-top: 10px;
+            }
+        }
+        img{
+            width: 250px;
+        }
+    }     
+    
+    .como{
+        padding: 0px 0px;
+        div{
+            padding: 10px;
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+                padding-top: 10px;
+            }
+        }
+    } 
+    
+
+    .valor{
+        h2{
+            font-size: 18px; 
+        }
+        div{
+            div{
+                width: 200px;
+                margin: 5px; 
+                img{
+                    width:20px ;
+                    height:20px ;
+                } 
+                h3{
+                    font-size: 12px;     
+                }
+                p{
+                    font-size: 10px; 
+                }
+            }
+        } 
+    } 
+    
+    .titulo{
+        h1{
+            font-size:15px; 
+        }
+    } 
+    .servicio{
+        margin: 10px;
+        img{
+            width:150px;
+            height: auto;
+        }
+        .texto{
+            h2{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px;
+            }
+            h3{
+                font-size: 10px;
+            }
+            ul{
+                li{
+                    font-size: 10px;
+                }
+            }
+        }
+    } 
+    .operaciones{
+        div{
+            font-size: 12px; 
+            padding: 10px;
+            h2{
+                font-size: 15px;
+                margin: 5px;
+            }
+        } 
+    }
+
+    .operadores{
+        h2{
+            font-size: 15px;
+        }
+        p{
+            font-size: 12px; 
+        }
+        .plContenedor{    
+            .pl{
+                h3{
+                    font-size: 18px;
+                }
+                div{
+                    p{
+                        font-size: 12px; 
+                        padding: 10px;
+                    }
+                    img{
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactanos{
+        margin: 5px;
+        .contacto{
+            @include flexbox(column,center,center,nowrap);
+            .datos-contacto{
+                h2{
+                    font-size: 15px;
+                }
+            }    
+        }
+    } 
+    .contactanos-formulario{
+        width: 100%;
+        }
+        
+}

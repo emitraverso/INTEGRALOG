@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;  
+    box-sizing: border-box;  
+}
+
+.titulo{
+    h1{
+        font-size:25px; 
+        background-color: #9bbec872;
+        color: nth($colores,5);
+        font-weight: lighter;
+        padding: 10px; 
+    }
+}
+
+/*!--------FORMULARIO BOOTSTRAP------- */
+.contactanos-formulario{
+    width: 50%;
+    margin: 20px ;
+    p{
+        font-size: 18px;
+        color: nth($colores,5);
+        width: 80%;
+    }
+    .formulario{
+        border: nth($colores, 1) solid 1px;
+        margin: 0px 20px;
+        padding: 30px;
+        width: 90%;
+        border-radius: 10px;
+        color: nth($colores, 1);
+        background-color: nth($colores, 5);
+    }
+}
+
+.btn-primary{
+    background-color: nth($colores,1);
+    --bs-btn-border-color: nth($colores,1);
+    --bs-btn-hover-bg: #9BBEC8;
+    --bs-btn-hover-border-color: #9BBEC8;
+}
+
+
+

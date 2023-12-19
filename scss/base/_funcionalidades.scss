@@ -1,0 +1,21 @@
+
+$font-h2: 18px;
+
+$colores:#164863,#427D9D, #9BBEC8,#DDF2FD,white;
+
+%caja-contenedor{
+    border: nth($colores,1) solid 2px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+@mixin flexbox($direction, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+
+

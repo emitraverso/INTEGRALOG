@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.servicios .contenedor div {
+  border: #164863 solid 2px;
+  border-radius: 10px;
+  margin: 30px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; }
+
+.titulo h1 {
+  font-size: 25px;
+  background-color: #9bbec872;
+  color: white;
+  font-weight: lighter;
+  padding: 10px; }
+
+/*!--------FORMULARIO BOOTSTRAP------- */
+.contactanos-formulario {
+  width: 50%;
+  margin: 20px; }
+  .contactanos-formulario p {
+    font-size: 18px;
+    color: white;
+    width: 80%; }
+  .contactanos-formulario .formulario {
+    border: #164863 solid 1px;
+    margin: 0px 20px;
+    padding: 30px;
+    width: 90%;
+    border-radius: 10px;
+    color: #164863;
+    background-color: white; }
+
+.btn-primary {
+  background-color: #164863;
+  --bs-btn-border-color: nth($colores,1);
+  --bs-btn-hover-bg: #9BBEC8;
+  --bs-btn-hover-border-color: #9BBEC8; }
+
+header {
+  position: sticky;
+  top: 0; }
+
+.logo {
+  width: 220px; }
+
+.nav-color {
+  background-color: #164863; }
+
+.nav-link {
+  color: white;
+  font-size: 15px; }
+
+.navbar-nav .nav-link.active {
+  color: #9BBEC8; }
+
+main i {
+  font-size: 50px;
+  background-color: #25D365;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  transition: 1s; }
+  main i:hover {
+    transform: scale(1.1); }
+
+main section h2 {
+  font-size: 25px;
+  color: #164863;
+  text-align: center;
+  font-weight: bolder; }
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/superior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: calc(100vh - 71px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .hero h1 {
+    font-size: 35px;
+    padding: 10px; }
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    color: white; }
+  .hero div {
+    display: flex; }
+    .hero div a {
+      text-decoration: none;
+      margin: 10px;
+      padding: 10px;
+      color: white;
+      background-color: #9bbec8bc;
+      width: 130px;
+      text-align: center;
+      transition: 1s; }
+      .hero div a:hover {
+        background-color: #164863; }
+
+.elegirnos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 10px; }
+  .elegirnos img {
+    width: 500px; }
+  .elegirnos div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center; }
+    .elegirnos div h2 {
+      font-size: x-large;
+      color: #164863;
+      margin-bottom: 10px; }
+    .elegirnos div p {
+      font-size: 18px;
+      text-align: justify;
+      color: #427D9D;
+      margin: 10px; }
+
+.servicios {
+  padding: 30px 10px;
+  margin-top: 20px; }
+  .servicios h2 {
+    border: 2px solid #164863;
+    padding: 5px; }
+  .servicios .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .servicios .contenedor div {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: nowrap;
+      background-color: #164863;
+      transition-duration: 1s; }
+      .servicios .contenedor div:hover {
+        transform: scale(1.1);
+        border: 3px solid #9BBEC8; }
+      .servicios .contenedor div img {
+        width: 40%; }
+      .servicios .contenedor div h3 {
+        font-size: medium;
+        text-align: center;
+        height: 10%;
+        color: white; }
+      .servicios .contenedor div a {
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        margin: 2px;
+        color: #164863;
+        background-color: rgba(255, 255, 255, 0.839);
+        font-size: smaller;
+        width: 40%;
+        transition: 1s; }
+        .servicios .contenedor div a:hover {
+          background-color: #427D9D;
+          color: white; }
+
+.galeria {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 20px; }
+  .galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.img-2 {
+  grid-column: span 2; }
+
+.img-3 {
+  grid-row: span 2; }
+
+.img-7 {
+  grid-row: span 2; }
+
+.img-8 {
+  grid-column: span 2; }
+
+.nosotros {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ddf2fd2d; }
+  .nosotros div {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 50%; }
+    .nosotros div p {
+      padding-top: 20px;
+      text-align: justify;
+      color: #427D9D;
+      font-size: 18px; }
+  .nosotros img {
+    width: 600px; }
+
+.como {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .como img {
+    width: 600px; }
+  .como div {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 50%; }
+    .como div p {
+      padding-top: 20px;
+      text-align: justify;
+      color: #427D9D;
+      font-size: 18px; }
+
+.valor {
+  padding: 30px 10px 40px;
+  background-color: #ddf2fd32; }
+  .valor h2 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .valor div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .valor div div {
+      width: 350px;
+      margin: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .valor div div img {
+        width: 50px;
+        height: 50px; }
+      .valor div div h3 {
+        padding: 5px;
+        font-size: 20px; }
+      .valor div div p {
+        padding: 5px;
+        color: #164863;
+        font-size: 15px; }
+
+.servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 5px;
+  width: 80%;
+  margin: 20px auto;
+  transition: 1s; }
+  .servicio:hover {
+    font-weight: bolder;
+    transform: scale(1.05);
+    border: #9BBEC8 solid 2px; }
+  .servicio .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 60%;
+    background-color: #ddf2fd32;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    margin: 10px; }
+    .servicio .texto h2 {
+      font-size: x-large;
+      color: #164863;
+      font-weight: bolder;
+      text-align: left; }
+    .servicio .texto p {
+      margin: 5px;
+      font-size: 14px;
+      text-align: justify;
+      color: #164863; }
+    .servicio .texto h3 {
+      margin: 10px;
+      font-size: 14px;
+      color: #164863; }
+    .servicio .texto ul li {
+      font-size: 14px;
+      color: #427D9D;
+      padding-left: 10px;
+      list-style: none; }
+  .servicio img {
+    width: 300px;
+    height: 200px;
+    margin: 10px; }
+
+.operaciones {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/op-logisticos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 450px;
+  margin-top: 5px; }
+  .operaciones div {
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    padding: 20px 25px; }
+    .operaciones div h2 {
+      color: white;
+      margin: 10px;
+      font-size: 22px; }
+
+.operadores {
+  padding: 30px; }
+  .operadores h2 {
+    margin: 20 px; }
+  .operadores p {
+    width: 80%;
+    margin: auto; }
+  .operadores .plContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px; }
+    .operadores .plContenedor .pl {
+      width: 80%;
+      text-align: justify;
+      border: #164863 solid 2px;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      transition-duration: 1s; }
+      .operadores .plContenedor .pl:hover {
+        border: #9BBEC8 solid 2px; }
+      .operadores .plContenedor .pl h3 {
+        height: 100%;
+        padding: 20px;
+        font-size: 40px;
+        color: white;
+        background-color: #164863; }
+      .operadores .plContenedor .pl div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; }
+        .operadores .plContenedor .pl div p {
+          padding: 10px 20px; }
+        .operadores .plContenedor .pl div img {
+          height: 120px; }
+
+.contactanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/op-logisticos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 0px; }
+  .contactanos .contacto {
+    margin: 0px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 50%; }
+    .contactanos .contacto .datos-contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: nowrap;
+      color: white; }
+      .contactanos .contacto .datos-contacto h2 {
+        margin: 30px;
+        font-size: 18px;
+        font-weight: bolder; }
+      .contactanos .contacto .datos-contacto h3 {
+        font-size: 20px; }
+      .contactanos .contacto .datos-contacto p {
+        color: #DDF2FD;
+        font-size: 18px; }
+
+footer {
+  background-color: #164863;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap; }
+  footer img {
+    width: 200px; }
+  footer div a img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    transition: 1s; }
+    footer div a img:hover {
+      transform: scale(1.2); }
+
+@media screen and (max-width: 1250px) {
+  .elegirnos {
+    flex-direction: column;
+    align-items: center; }
+    .elegirnos img {
+      width: 50%; }
+    .elegirnos div {
+      width: 80%;
+      text-align: center; }
+  .nosotros {
+    flex-direction: column; }
+    .nosotros div {
+      width: 80%; }
+  .como {
+    flex-direction: column-reverse; }
+    .como div {
+      width: 80%; }
+  .operaciones {
+    height: fit-content; }
+  .operadores .plContenedor .pl {
+    width: 90%;
+    margin: 10px;
+    height: fit-content;
+    justify-content: center; }
+    .operadores .plContenedor .pl div {
+      width: fit-content; }
+      .operadores .plContenedor .pl div img {
+        height: 90px; }
+  .contactanos .contacto {
+    margin: 0px 20px 20px 20px; } }
+
+@media screen and (max-width: 900px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px; }
+    .galeria div {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .hero h1 {
+    font-size: 25px; }
+  .hero p {
+    font-size: 18px; }
+  .hero div a {
+    font-size: 12px; }
+  main i {
+    font-size: 40px; }
+  .nosotros div h2 {
+    font-size: 18px; }
+  .nosotros div p {
+    font-size: 15px; }
+  .nosotros img {
+    width: 500px; }
+  .como img {
+    width: 500px; }
+  .como div h2 {
+    font-size: 18px; }
+  .como div p {
+    font-size: 15px; }
+  .valor h2 {
+    font-size: 18px; }
+  .valor div div {
+    width: 250px;
+    margin: 10px; }
+    .valor div div img {
+      width: 30px;
+      height: 30px; }
+    .valor div div h3 {
+      font-size: 15px; }
+    .valor div div p {
+      font-size: 12px; }
+  .titulo h1 {
+    font-size: 20px; }
+  .servicio {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+    .servicio .texto {
+      width: 90%;
+      align-items: center; }
+      .servicio .texto ul li {
+        text-align: center; }
+  #distribucion {
+    flex-direction: column-reverse; }
+  #kpi {
+    flex-direction: column-reverse; }
+  #comex {
+    flex-direction: column-reverse; }
+  .operaciones div {
+    font-size: 15px; }
+    .operaciones div h2 {
+      font-size: 20px; }
+  .operadores h2 {
+    font-size: 20px; }
+  .operadores p {
+    font-size: 15px; }
+  .operadores .plContenedor .pl h3 {
+    font-size: 25px; }
+  .operadores .plContenedor .pl div img {
+    height: 80px; }
+  .contactanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .contactanos .contacto {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 20px;
+      width: 100%; }
+      .contactanos .contacto .datos-contacto h2 {
+        margin: 20px; }
+      .contactanos .contacto .datos-contacto h3 {
+        font-size: 18px; }
+      .contactanos .contacto .datos-contacto p {
+        font-size: 15px; }
+  .contactanos-formulario {
+    width: 80%; } }
+
+@media screen and (max-width: 800px) {
+  .elegirnos div h2 {
+    font-size: 20px; }
+  .elegirnos div p {
+    font-size: 15px; }
+  .como img {
+    display: none; }
+  .operaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+  .operadores p {
+    width: 90%; }
+  .operadores .plContenedor .pl h3 {
+    font-size: 22px; }
+  .operadores .plContenedor .pl div img {
+    height: 60px; } }
+
+@media screen and (max-width: 650px) {
+  .logo {
+    width: 150px; }
+  .galeria {
+    grid-template-columns: 1fr; }
+  .hero h1 {
+    font-size: 20px; }
+  .hero p {
+    font-size: 15px;
+    margin-bottom: 10px; }
+  .hero div a {
+    font-size: 12px;
+    width: 90px;
+    padding: 5px; }
+  .img-4 {
+    display: none; }
+  .nosotros img {
+    width: 400px; }
+  .servicio .texto h2 {
+    font-size: 16px; }
+  .servicio .texto p {
+    font-size: 12px; }
+  .servicio .texto h3 {
+    font-size: 12px;
+    text-align: center; }
+  .servicio .texto ul li {
+    font-size: 12px;
+    text-align: center; }
+  .operadores {
+    padding: 20px; }
+    .operadores p {
+      width: 90%; }
+    .operadores .plContenedor {
+      margin: 10px; }
+      .operadores .plContenedor .pl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 10px; }
+        .operadores .plContenedor .pl h3 {
+          padding: 10px;
+          margin: 5px; }
+        .operadores .plContenedor .pl div p {
+          width: 100%;
+          margin: 0px; }
+  .contactanos .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 20px;
+    width: 100%; }
+    .contactanos .contacto .datos-contacto h2 {
+      margin: 18px; }
+    .contactanos .contacto .datos-contacto h3 {
+      font-size: 15px; }
+    .contactanos .contacto .datos-contacto p {
+      font-size: 12px; }
+  .contactanos-formulario {
+    margin: 10px; }
+    .contactanos-formulario p {
+      font-size: 15px; } }
+
+@media screen and (max-width: 550px) {
+  .galeria {
+    grid-auto-rows: 200px;
+    gap: 10px; }
+  .elegirnos div h2 {
+    font-size: 15px; }
+  .elegirnos div p {
+    font-size: 12px; }
+  .hero h1 {
+    font-size: 18px; }
+  .hero div a {
+    font-size: 10px; }
+  main i {
+    font-size: 30px;
+    right: 20px;
+    bottom: 40px; }
+  .servicios .contenedor div {
+    width: 200px;
+    height: 200px;
+    margin: 20px; }
+    .servicios .contenedor div:hover {
+      width: 200px;
+      height: 200px; }
+    .servicios .contenedor div h3 {
+      font-size: 12px; }
+    .servicios .contenedor div a {
+      font-size: 10px;
+      width: 40%; }
+  main section h2 {
+    font-size: 18px; }
+  footer img {
+    width: 150px; }
+  footer div a img {
+    width: 20px;
+    height: 20px;
+    margin: 5px; }
+  .nosotros {
+    padding: 0px 0px; }
+    .nosotros div {
+      padding: 10px; }
+      .nosotros div h2 {
+        font-size: 15px; }
+      .nosotros div p {
+        font-size: 12px;
+        padding-top: 10px; }
+    .nosotros img {
+      width: 250px; }
+  .como {
+    padding: 0px 0px; }
+    .como div {
+      padding: 10px; }
+      .como div h2 {
+        font-size: 15px; }
+      .como div p {
+        font-size: 12px;
+        padding-top: 10px; }
+  .valor h2 {
+    font-size: 18px; }
+  .valor div div {
+    width: 200px;
+    margin: 5px; }
+    .valor div div img {
+      width: 20px;
+      height: 20px; }
+    .valor div div h3 {
+      font-size: 12px; }
+    .valor div div p {
+      font-size: 10px; }
+  .titulo h1 {
+    font-size: 15px; }
+  .servicio {
+    margin: 10px; }
+    .servicio img {
+      width: 150px;
+      height: auto; }
+    .servicio .texto h2 {
+      font-size: 12px; }
+    .servicio .texto p {
+      font-size: 10px; }
+    .servicio .texto h3 {
+      font-size: 10px; }
+    .servicio .texto ul li {
+      font-size: 10px; }
+  .operaciones div {
+    font-size: 12px;
+    padding: 10px; }
+    .operaciones div h2 {
+      font-size: 15px;
+      margin: 5px; }
+  .operadores h2 {
+    font-size: 15px; }
+  .operadores p {
+    font-size: 12px; }
+  .operadores .plContenedor .pl h3 {
+    font-size: 18px; }
+  .operadores .plContenedor .pl div p {
+    font-size: 12px;
+    padding: 10px; }
+  .operadores .plContenedor .pl div img {
+    height: 40px; }
+  .contactanos {
+    margin: 5px; }
+    .contactanos .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .contactanos .contacto .datos-contacto h2 {
+        font-size: 15px; }
+  .contactanos-formulario {
+    width: 100%; } }

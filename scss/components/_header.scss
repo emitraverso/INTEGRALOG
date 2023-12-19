@@ -1,0 +1,18 @@
+header{
+    position: sticky;
+    top: 0;  
+}
+.logo{
+    width:220px ;
+}
+.nav-color{
+    background-color: #164863;
+}
+
+.nav-link{
+    color: white;
+    font-size: 15px;
+}
+.navbar-nav .nav-link.active{
+    color: #9BBEC8;
+}
