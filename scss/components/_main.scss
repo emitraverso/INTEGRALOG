@@ -63,6 +63,8 @@ main{
 }
 
 .elegirnos{
+    background: rgb(22,72,99);
+    background: linear-gradient(180deg, rgba(22,72,99,0.8855917366946778) 36%, rgba(13,35,47,1) 100%);
     @include flexbox(row,space-evenly,center,nowrap); 
     margin-top: 10px;
     img{
@@ -72,26 +74,30 @@ main{
         width: 50%;
         @include flexbox(column,center,center,nowrap);
         text-align: center;
+        padding: 10px;
         h2{
             font-size: x-large;
-            color:nth($colores,1);
+            color:nth($colores,5);
             margin-bottom: 10px;
+            font-weight: lighter;
         }
         p{
-            font-size: 18px;  
+            font-size: 17px;  
             text-align: justify;  
-            color: nth($colores,2);
-            margin:10px;
+            color: nth($colores,4);
+            margin: 15px 10px 10px 10px;
         }
     }
 }
 
 .servicios{
     padding: 30px 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     h2{
-        border: 2px solid nth($colores,1);
-        padding: 5px;
+        padding:5px;
+        background-color: #0d232f;
+        color: nth($colores,5);
+        font-weight: lighter;
     }
     .contenedor{
         @include flexbox(row,space-around,center,wrap);
@@ -101,6 +107,7 @@ main{
             height: 300px;
             @include flexbox(column,space-evenly,center,nowrap); 
             background-color: nth($colores,1);
+            border: 2px solid #0d232f;
             transition-duration: 1s;
             
             &:hover{
